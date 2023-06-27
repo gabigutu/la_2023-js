@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joc Hi Lo</title>
+
+    <script src="hilo.js"></script>
+
+    <style>
+        .action {
+            font-size: 3rem;
+            cursor: pointer;
+        }
+
+        #score {
+            border: 1px solid black;
+            font-size: 2rem;
+            margin-top: 1rem;
+            padding: 1rem;
+            width: fit-content;
+        }
+
+        #score span {
+            font-weight: bold;
+            font-family: 'Courier New', Courier, monospace;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="card">
+        <img src="" alt="current card" />
+    </div>
+    <button class="action" title="Higher" onclick="higher();">Hi</button>
+    <button class="action" title="Lower" onclick="lower();">Lo</button>
+    <div id="score">
+        Current score: <span></span>
+    </div>
+
+    <div id="face-happy" style="display: none">
+        <img src="faces/happy.png" alt="happy" />
+    </div>
+    <div id="face-sad" style="display: none">
+        <img src="faces/sad.png" alt="sad" />
+    </div>
+    
+</body>
+</html>
