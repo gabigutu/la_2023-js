@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>melonJS - Tiled example map loader</title>
+  <link rel="stylesheet" type="text/css" media="screen" href="index.css">
+  <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+</head>
+<body>
+    <!-- Canvas placeholder -->
+    <div id="map" style="float: inherit;">
+    <label for="tmx_map">Tiled example map loader:</label>
+    <select name="level_name" id="level_name">
+        <option value=1>Village</option>
+        <option value=2>Desert</option>
+        <option value=3>Sewers</option>
+        <option value=4>Isometric</option>
+        <option value=5>Orthogonal</option>
+        <option value=6>Perspective</option>
+        <option value=7>Hexagonal</option>
+        <option value=8>RPG Island</option>
+        <option value=9>Magic Land Dizzy</option>
+        <option value=10>jb-32 desert</option>
+        <option value=11>gameart2d desert</option>
+        <option value=12>gameboy space</option>
+        <option value=13>Island (rotated & animated tiles)</option>
+        <option value=14>desert (Infinite map)</option>
+        <option value=15>Space Base 1-B</option>
+    </select>
+    <label for="instructions ">(Use arrow keys or mouse wheel to scroll to the selected map)</label>
+    </div>
+
+    <div id="screen" style="float: inherit;">
+    </div>
+
+    <!-- Bootstrap -->
+    <script type="module">
+        import { device } from 'https://esm.run/melonjs';
+        import onload from './js/index.js';
+
+        device.onReady(function onReady() {
+            onload();
+        });
+    </script>
+</body>
+</html>

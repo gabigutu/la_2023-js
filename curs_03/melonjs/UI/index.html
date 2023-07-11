@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>melonJS - UI Example</title>
+  <link rel="stylesheet" type="text/css" media="screen" href="index.css">
+  <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+</head>
+<body>
+  <!-- Canvas placeholder -->
+  <div class="topnav">
+    <a href="#File">File</a>
+    <a href="#Edit">Edit</a>
+    <a href="#View">View</a>
+    <a href="#Selection">Selection</a>
+    <a href="#Find">Find</a>
+    <a href="#Help">Help</a>
+    <a href="#About">About</a>
+  </div>
+
+  <!-- Canvas placeholder -->
+  <div id="screen"></div>
+
+  <!-- Bootstrap -->
+  <script type="module">
+      import { device } from 'https://esm.run/melonjs';
+      import game from './js/index.js';
+
+      device.onReady(function onReady() {
+          game.onload();
+      });
+  </script>
+
+</body>
+</html>
